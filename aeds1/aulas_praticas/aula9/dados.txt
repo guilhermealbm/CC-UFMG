@@ -1,0 +1,6 @@
+2,Maria da Silva,8.5,4.8
+13,Joao de Almeida,7.5,6.1
+15,Jose de Almeida,8.8,9.3
+21,Maria Joao,7.3,7.3
+10,Guilherme Miranda,10.000000,10.000000
+15,Fulano,5.000000,7.000000
