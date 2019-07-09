@@ -1,0 +1,3 @@
+[submodule "introducao_bd/pick-up-games"]
+	path = introducao_bd/pick-up-games
+	url = git://github.com/brenopoggiali/pick-up-games
