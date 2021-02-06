@@ -1,0 +1,97 @@
+UNIVERSIDADE FEDERAL DE MINAS GERAIS
+Instituto de Ciências Exatas
+Departamento de Ciência da Computação
+
+DCC207 -- Algoritmos 2
+Prof. Renato Vimieiro
+
+Trabalho Prático 1 -- Manipulação de sequências
+
+Objetivos
+---------
+
+Nesse trabalho serão abordados os aspectos práticos de manipulação de
+sequências. Especificamente, serão explorados aspectos de implementação
+de árvores de sufixo para localização de padrões.
+
+O objetivo secundário é fixar o conteúdo. Entende-se que ao implementar a 
+estrutura o aluno conseguirá compreender melhor os conceitos explorados.
+Dessa forma, o conteúdo teórico será melhor absorvido e fixado.
+
+Tarefas
+-------
+
+Os alunos deverão implementar um algoritmo para resolver o problema
+de encontrar a maior substring que se repete em um texto, usando árvores
+de sufixo.
+
+A árvore de sufixos deverá ser implementada através de uma Trie compacta.
+O texto a ser processado, i.e. o genoma do Sars-Cov-2 (Corona vírus), deverá
+ser carregado para memória principal em estrutura de dados compacta, representando
+um vetor de caracteres. Dessa forma, os nós da árvore serão rotulados por
+pares de índices, identificando início e fim da substring no texto.
+A árvore pode ser construída com um algoritmo quadrático, inserindo os sufixos
+um a um. 
+
+Deve-se implementar também o algoritmo que identifica a maior substring que se 
+repete no texto. Isso é, o algoritmo deve localizar e retornar a maior substring
+w no genoma do Sars-cov-2 que ocorre em pelo menos duas posições distintas do
+texto. Sua implementação deve retornar essa string e o número de ocorrências no
+texto. Poderão ser introduzidas modificações na estrutura de dados para facilitar
+a implementação dessa funcionalidade.
+
+As implementações deverão ser feitas em Python 3.6+, podendo usar NumPy como
+biblioteca de suporte para estrutura de dados básicas. Alternativamente, serão
+admitidas implementações em C/C++ compiláveis com GCC. Nesse caso, o aluno também
+deverá incluir um arquivo Makefile para geração do executável.
+
+O uso de bibliotecas adicionais deve ser discutido com o professor.
+
+O que entregar?
+---------------
+
+Devem ser entregues todos os arquivos fonte usados na implementação. Deve ser
+entregue também um relatório explicando sua implementação. Devem ser descritos
+detalhes de implementação da estrutura de dados e da função para encontrar a maior
+substring que se repete. O relatório também deve conter o resultado da execução
+do algoritmo com o genoma do Sars-cov-2 anexo a essa descrição, contendo tempo
+de processamento dos sufixos, localização da substring, tempo total e consumo de
+memória. O relatório deve ser um arquivo em pdf.
+
+Política de Plágio
+------------------
+
+Os alunos podem, e devem, discutir soluções sempre que necessário. Dito isso,
+há uma diferença bem grande entre implementação de soluções similares e cópia
+integral de ideias. Trabalhos copiados na íntegra ou em partes de outros alunos
+e/ou da internet serão prontamente anulados. Caso hajam dois trabalhos copiados
+por alunos diferentes, ambos serão anulados.
+
+Datas
+-----
+
+Entrega Teams: 20/09/2020 às 23h59
+
+
+Política de atraso
+------------------
+
+Haverá tolerância de 30min na entrega dos trabalhos. Submissões feitas depois
+do intervalo de tolerância serão penalizados. 
+- Atraso de 1 dia: 10%
+- Atraso de 2 dias: 30%
+- Atraso de +3 dias: não aceito
+
+Serão considerados atrasos de 1 dia aqueles feitos após as 0h30 do dia 21.
+Dois dias serão entregas feitas no dia 22.
+
+Lista de anexos
+---------------
+
+- Arquivo sarscov2.fasta. Genoma do vírus em formato FASTA. 
+
+Links de interesse
+------------------
+
+- https://pt.wikipedia.org/wiki/Formato_FASTA
+- https://www.ncbi.nlm.nih.gov/sars-cov-2/
