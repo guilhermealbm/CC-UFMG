@@ -1,0 +1,18 @@
+O TP3 de compiladores foi implementado a fim de construir um parser para a linguagem Cool,
+observando todas suas regras sintáticas descritas nas documentação fornecida.
+Foi utilizado, portanto, o manual da linguagem, 
+assim como as regras (já previamente implementadas) e a documentação do Bison, 
+que apresenta diversos exemplos de criações de regras sintáticas, assim como 
+tratamentos de erros (conforme requisitado pelo TP).
+
+Nenhuma grande decisão precisou ser tomada em relação ao que consideramos 
+o "fluxo ideal" para construção do trabalho, ou seja, a implementação mais 
+lógica do parser.
+
+Para os casos de teste no arquivo bad.cl, utilizamos a criatividade, 
+com o objetivo de cobrir a maior gama possível de casos em que o 
+parser não seria concluído com êxito. 
+Já para o arquivo good.cl, criamos nossos próprios testes 
+mas também aproveitamos alguns exemplos fornecidos. 
+Tais exemplos são bastante úteis pois contém vários cenários diferentes, 
+além verificar o comportamento do parser com uma grande quantidade de código.

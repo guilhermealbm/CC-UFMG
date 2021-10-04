@@ -1,0 +1,10 @@
+loop:
+ADD R1 R3
+LOAD R2 zero
+ADD R2 R0
+SUB R2 R1
+JN end_program
+WRITE R1
+JUMP loop
+RET
+END

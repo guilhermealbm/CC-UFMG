@@ -1,0 +1,39 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; LOOP
+; Gera um loop de 1 até N
+; Entrada: Natural N
+; Saída: Valores de 1 a N
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+READ R1                               ; entrada N
+COPY R0 R1                            ; atualiza estado com a entrada
+
+JN exit_invalid                         ; encerra o programa se entrada negativa
+JZ exit_invalid                         ; encerra o programa se entrada = zero
+
+LOAD R1 zero
+LOAD R3 one
+
+loop:
+ADD R1 R3
+LOAD R2 zero
+ADD R2 R0
+SUB R2 R1
+JN end_program
+WRITE R1
+JUMP loop
+
+exit_invalid: HALT
+
+end_program: HALT
+
+one: WORD 1
+zero: WORD 0
+
+END

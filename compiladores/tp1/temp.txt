@@ -1,0 +1,18 @@
+READ R1 
+COPY R0 R1 
+JN exit_invalid 
+JZ exit_invalid 
+LOAD R1 zero 
+LOAD R3 one 
+
+ADD R1 R3 
+LOAD R2 zero 
+ADD R2 R0 
+SUB R2 R1 
+JN end_program 
+WRITE R1 
+JUMP loop 
+HALT 
+HALT 
+WORD 1 
+WORD 0 
