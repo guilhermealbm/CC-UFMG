@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package hello;
+
+service Insere {
+    rpc insere (InsereReq) returns (InsereRes) {}
+}
+
+service Consulta {
+    rpc consulta (ConsultaReq) returns (ConsultaRes) {}
+}
+
+service Termina {
+    rpc termina (TerminaReq) returns (TerminaRes) {}
+}
+
+message InsereReq {
+    int32 ch = 1;
+    string desc = 2;
+    int32 val = 3;
+}
+
+message InsereRes {
+    int32 val = 1;
+}
+
+message ConsultaReq {
+    int32 ch = 1;
+}
+
+message ConsultaRes {
+    string desc = 1;
+    int32 val = 2;
+}
+
+message TerminaReq {
+
+}
+
+message TerminaRes {
+    int32 val = 1;
+}
